@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
     padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(250, 191, 191);
+    border-color: black;
+    border-style: solid;
 }
 .logo1{
     width: 200px;
@@ -31,4 +35,21 @@ h1, h2{
     margin-top: 15px;
     display: flex;
     justify-content: center;
+}
+.questao1{
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(213, 214, 214);
+    padding: 20px;
+    margin-bottom: 5px;
+}
+.questao2{
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(213, 214, 214);
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
