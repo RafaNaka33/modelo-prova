@@ -37,7 +37,7 @@ h1, h2{
     justify-content: center;
 }
 .questao1{
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-radius: 5px;
     background-color: rgb(213, 214, 214);
@@ -45,7 +45,7 @@ h1, h2{
     margin-bottom: 5px;
 }
 .questao2{
-    border-color: black;
+    border-color: white;
     border-style: solid;
     border-radius: 5px;
     background-color: rgb(213, 214, 214);
@@ -57,3 +57,4 @@ h1, h2{
     width: 50px;
     height: 20px
 }
+
