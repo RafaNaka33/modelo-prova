@@ -1,30 +1,55 @@
-function corrigir() {
-
-    // pegando nome e data
-    let nome = document.getElementById("nome").value;
-    let data = document.getElementById("data").value;
-
-    // gabarito
-    const respostasCorretas = {
-        q1: "c", // Paris
-        q2: "b"  // aqui você altera depois
-    };
-
-    let pontos = 0;
-    const valorPorQuestao = 20;
-
-    // verificar todas as questões automaticamente
-    for (let questao in respostasCorretas) {
-        let marcada = document.querySelector(`input[name="${questao}"]:checked`);
-
-        if (marcada && marcada.value === respostasCorretas[questao]) {
-            pontos += valorPorQuestao;
-        }
-    }
-
-    // exibir resultado
-    document.getElementById("resultado").innerHTML =
-        `Aluno: <b>${nome}</b><br>
-         Data: <b>${data}</b><br><br>
-         Pontuação Final: <b>${pontos} pontos</b>`;
+.topo{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(250, 191, 191);
+    border-color: black;
+    border-style: solid;
+}
+.logo1{
+    width: 200px;
+    margin-right: 20px;
+}
+.titulos{
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 15px;
+}
+.texto-lateral{
+    font-size: 30px;
+}
+.informacoesProva{
+    font-size: 10px;
+}
+.alternativas{
+    font-size: 25px;
+}
+.destaque{
+    color: red;
+}
+h1, h2{
+    font-weight: normal;
+}
+.centro{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.questao1{
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(213, 214, 214);
+    padding: 20px;
+    margin-bottom: 5px;
+}
+.questao2{
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: rgb(213, 214, 214);
+    padding: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
